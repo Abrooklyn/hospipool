@@ -101,6 +101,11 @@ h6,
     display:flex;
     align-items: center;
     box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .5);
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
     .navbar-toggler{
         color:$blanc;
     }
@@ -133,8 +138,14 @@ h6,
         margin: 0 auto;
         width:1280px;
         margin-top:5rem;
+        @media (min-width: 1200px){
+        iframe{
+            width:1110px;
+            }
+        }
     }
 }
+
 
 .section{
     background: $blanc;
@@ -149,7 +160,7 @@ h6,
 
 .section_concept_img,
 .section_concept_txt{
-    width: 100%;
+    width: 98%;
     overflow: hidden;
 }
 
@@ -281,33 +292,90 @@ textarea.form-control:focus{
 
 //-- FOOTER -- 
 footer{
+
     background-color: $noir;
     margin-top:10rem;
     .container{
         padding-top: 3rem;
         padding-bottom: 3rem;
-        ul{
-            display:flex;
-            align-items: center;
-            li{
-                list-style: none;
-                display: inline-block;
-                a{
-                    text-decoration:none;
-                }
-                .footer_facebook{
-                    &:before{
-                        content:url(../img/fb.svg);
+        display:flex;
+        justify-content: space-between;
+        .footer_logo{
+            display:inline-block;
+        }
+        .footer_title{
+            h2{
+                color: $blanc;
+            }
+        }
+        .footer_subtitle{
+            h2{
+                color: $grissombre;
+            }
+        }
+        .footer_reseaux{
+            height: 5rem;
+            width: 100%;
+            ul{
+                display:flex;
+                justify-content: space-between;
+                margin-top:3rem;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    a{
+                        text-decoration:none;
+                        color:$blanc;
+                        transition: $transition;
+                        font-weight: bold;
                     }
-                }
-                .footer_twitter{
-                    &:before{
-                        content:url(../img/tw.svg);
+                    a:hover{
+                        color:$rougevif;
                     }
-                }
-                .footer_instagram{
-                    &:before{
-                        content:url(../img/insta.svg);
+                    .footer_facebook{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/fb.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_facebook:hover,
+                    .footer_facebook:focus{
+                        &:before{
+                            content:url(../img/fb_red.svg);
+                        }
+                    }
+                    .footer_twitter{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/tw.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_twitter:hover,
+                    .footer_twitter:focus{
+                        &:before{
+                            content:url(../img/tw_red.svg);
+                        }
+                    }
+                    .footer_instagram{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/insta.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_instagram:hover,
+                    .footer_instagram:focus{
+                        &:before{
+                            content:url(../img/insta_red.svg);
+                        }
                     }
                 }
             }
@@ -315,3 +383,61 @@ footer{
     }
 }
 
+//  ------ responsive -----
+
+
+@media (max-width: 1200px){
+    .background_video .video iframe {
+        width: 960px;
+    }
+    .background_video .video{
+        width:100%;
+    }
+}
+@media (max-width: 992px){
+    .background_video .video iframe {
+        width: 690px;
+    }
+    footer{
+        height: 45rem;
+    }
+    .section_dons:before {
+        width: 98%;
+        overflow: hidden;
+    }
+    .background_video .video{
+        width:100%;
+    }
+}
+@media (max-width: 767px){
+    .background_video .video iframe {
+        width: 510px;
+    }
+    .section_contact_img:before {
+        display:none;
+    }
+    .contact_placement{
+        margin-left:0 !important;
+    }
+    .section_dons:before {
+        width: 98%;
+        overflow: hidden;
+    }
+    footer .container{
+        display: block!important;
+        text-align: center;
+    }
+    footer{
+        height: 55rem;
+    }
+
+    .footer_title{
+        margin-top:3rem;
+    }
+    .background_video .video{
+        background-color: transparent;
+    }
+    .section_concept_img img{
+        width:100%;
+    }
+}

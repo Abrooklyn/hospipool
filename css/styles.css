@@ -54,6 +54,10 @@ h6,
   align-items: center;
   box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.5);
   background-color: #13171B; }
+  .navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
   .navbar .navbar-toggler {
     color: #F7F7F7; }
   .navbar .navbar-brand {
@@ -79,6 +83,9 @@ h6,
     margin: 0 auto;
     width: 1280px;
     margin-top: 5rem; }
+    @media (min-width: 1200px) {
+      .background_video .video iframe {
+        width: 1110px; } }
 
 .section {
   background: #F7F7F7;
@@ -91,7 +98,7 @@ h6,
 
 .section_concept_img,
 .section_concept_txt {
-  width: 100%;
+  width: 98%;
   overflow: hidden; }
 
 .section_actu,
@@ -216,20 +223,107 @@ footer {
   margin-top: 10rem; }
   footer .container {
     padding-top: 3rem;
-    padding-bottom: 3rem; }
-    footer .container ul {
-      display: flex;
-      align-items: center; }
-      footer .container ul li {
-        list-style: none;
-        display: inline-block; }
-        footer .container ul li a {
-          text-decoration: none; }
-        footer .container ul li .footer_facebook:before {
-          content: url(../img/fb.svg); }
-        footer .container ul li .footer_twitter:before {
-          content: url(../img/tw.svg); }
-        footer .container ul li .footer_instagram:before {
-          content: url(../img/insta.svg); }
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between; }
+    footer .container .footer_logo {
+      display: inline-block; }
+    footer .container .footer_title h2 {
+      color: #F7F7F7; }
+    footer .container .footer_subtitle h2 {
+      color: #13171B; }
+    footer .container .footer_reseaux {
+      height: 5rem;
+      width: 100%; }
+      footer .container .footer_reseaux ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem; }
+        footer .container .footer_reseaux ul li {
+          list-style: none;
+          display: inline-block; }
+          footer .container .footer_reseaux ul li a {
+            text-decoration: none;
+            color: #F7F7F7;
+            transition: 0.3s;
+            font-weight: bold; }
+          footer .container .footer_reseaux ul li a:hover {
+            color: #A32633; }
+          footer .container .footer_reseaux ul li .footer_facebook:before {
+            margin: 0 auto;
+            content: url(../img/fb.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_facebook:hover:before,
+          footer .container .footer_reseaux ul li .footer_facebook:focus:before {
+            content: url(../img/fb_red.svg); }
+          footer .container .footer_reseaux ul li .footer_twitter:before {
+            margin: 0 auto;
+            content: url(../img/tw.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_twitter:hover:before,
+          footer .container .footer_reseaux ul li .footer_twitter:focus:before {
+            content: url(../img/tw_red.svg); }
+          footer .container .footer_reseaux ul li .footer_instagram:before {
+            margin: 0 auto;
+            content: url(../img/insta.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_instagram:hover:before,
+          footer .container .footer_reseaux ul li .footer_instagram:focus:before {
+            content: url(../img/insta_red.svg); }
+
+@media (max-width: 1200px) {
+  .background_video .video iframe {
+    width: 960px; }
+
+  .background_video .video {
+    width: 100%; } }
+@media (max-width: 992px) {
+  .background_video .video iframe {
+    width: 690px; }
+
+  footer {
+    height: 45rem; }
+
+  .section_dons:before {
+    width: 98%;
+    overflow: hidden; }
+
+  .background_video .video {
+    width: 100%; } }
+@media (max-width: 767px) {
+  .background_video .video iframe {
+    width: 510px; }
+
+  .section_contact_img:before {
+    display: none; }
+
+  .contact_placement {
+    margin-left: 0 !important; }
+
+  .section_dons:before {
+    width: 98%;
+    overflow: hidden; }
+
+  footer .container {
+    display: block !important;
+    text-align: center; }
+
+  footer {
+    height: 55rem; }
+
+  .footer_title {
+    margin-top: 3rem; }
+
+  .background_video .video {
+    background-color: transparent; }
+
+  .section_concept_img img {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
