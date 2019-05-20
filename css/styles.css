@@ -190,4 +190,46 @@ h6,
     position: absolute;
     margin-left: 0rem; }
 
+.btn-primary {
+  background: #962333;
+  border: none;
+  margin-top: 1rem; }
+
+.btn-primary:hover {
+  background: #bf2d41; }
+
+.btn-primary:focus {
+  background: #6d1925; }
+
+input.form-control,
+textarea.form-control {
+  border-color: #962333; }
+
+input.form-control:active,
+input.form-control:focus,
+textarea.form-control:active,
+textarea.form-control:focus {
+  border-color: #962333; }
+
+footer {
+  background-color: #0F0F0F;
+  margin-top: 10rem; }
+  footer .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    footer .container ul {
+      display: flex;
+      align-items: center; }
+      footer .container ul li {
+        list-style: none;
+        display: inline-block; }
+        footer .container ul li a {
+          text-decoration: none; }
+        footer .container ul li .footer_facebook:before {
+          content: url(../img/fb.svg); }
+        footer .container ul li .footer_twitter:before {
+          content: url(../img/tw.svg); }
+        footer .container ul li .footer_instagram:before {
+          content: url(../img/insta.svg); }
+
 /*# sourceMappingURL=styles.css.map */

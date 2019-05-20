@@ -3,6 +3,7 @@ $basefontsize: 16px;
 
 
 //couleurs
+$noir: #0F0F0F;
 $blanc: #F7F7F7;
 $grissombre: #13171B;
 $grismoyen: #20252C;
@@ -24,6 +25,9 @@ $font-size-h3: 2rem;
 $font-size-h4: 2rem;
 $font-size-h5: 2rem;
 $font-size-h6: 2rem;
+
+
+
 
 html {
     scroll-behavior: smooth;
@@ -243,8 +247,71 @@ h6,
             content:url(../img/deadpool_sit.png);
             bottom: -14.7rem;
             position: absolute;
-            margin-left: 0rem;
+            margin-left: 0rem; 
         }
     }
 
+
+// ------- FORMS ---
+.btn-primary{
+    background: $rougemoyen;
+    border: none;
+    margin-top:1rem;
+
+}
+.btn-primary:hover{
+    background:lighten( $rougemoyen, 10% ) ;
+}
+
+.btn-primary:focus{
+    background: darken( $rougemoyen, 10% ) ;
+}
+input.form-control,
+textarea.form-control{
+    border-color: $rougemoyen;
+}
+
+input.form-control:active,
+input.form-control:focus,
+textarea.form-control:active,
+textarea.form-control:focus{
+    border-color: $rougemoyen;
+}
+
+
+//-- FOOTER -- 
+footer{
+    background-color: $noir;
+    margin-top:10rem;
+    .container{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        ul{
+            display:flex;
+            align-items: center;
+            li{
+                list-style: none;
+                display: inline-block;
+                a{
+                    text-decoration:none;
+                }
+                .footer_facebook{
+                    &:before{
+                        content:url(../img/fb.svg);
+                    }
+                }
+                .footer_twitter{
+                    &:before{
+                        content:url(../img/tw.svg);
+                    }
+                }
+                .footer_instagram{
+                    &:before{
+                        content:url(../img/insta.svg);
+                    }
+                }
+            }
+        }
+    }
+}
 
