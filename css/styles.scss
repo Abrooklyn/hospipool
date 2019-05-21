@@ -428,9 +428,11 @@ footer{
         text-align: center;
     }
     footer{
-        height: 55rem;
+        height: 70rem;
     }
-
+    .thanks{
+        margin-top: 2rem;
+    }
     .footer_title{
         margin-top:3rem;
     }
@@ -439,5 +441,28 @@ footer{
     }
     .section_concept_img img{
         width:100%;
+    }
+}
+
+.thanks{
+    font-family: 'Six Caps', sans-serif;
+    color:$blanc;
+    text-align: center;
+    width:100%;
+    span{
+        font-size:1.5rem;
+        color:#fff;
+    }
+    p,
+    a{
+        font-size: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        letter-spacing: 0.2rem;
+        display:inline-block;
+        
+    }
+    a{
+        color:$rougemoyen;
     }
 }

@@ -315,7 +315,10 @@ footer {
     text-align: center; }
 
   footer {
-    height: 55rem; }
+    height: 70rem; }
+
+  .thanks {
+    margin-top: 2rem; }
 
   .footer_title {
     margin-top: 3rem; }
@@ -325,5 +328,22 @@ footer {
 
   .section_concept_img img {
     width: 100%; } }
+.thanks {
+  font-family: 'Six Caps', sans-serif;
+  color: #F7F7F7;
+  text-align: center;
+  width: 100%; }
+  .thanks span {
+    font-size: 1.5rem;
+    color: #fff; }
+  .thanks p,
+  .thanks a {
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+    display: inline-block; }
+  .thanks a {
+    color: #962333; }
 
 /*# sourceMappingURL=styles.css.map */
