@@ -76,6 +76,12 @@ h6,
     .navbar .nav-item a:focus {
       color: #A32633; }
 
+.margin-top {
+  margin-top: 7rem; }
+
+.navbar--sans-marge-sup {
+  margin-top: -7rem; }
+
 .background_video {
   background: #20252C;
   width: 100%; }
@@ -119,6 +125,15 @@ h6,
     width: 60%;
     margin-left: 0 auto;
     display: inline-block; }
+
+.section_dons--sans-img .section_dons--center {
+  text-align: center; }
+.section_dons--sans-img:before {
+  content: " "; }
+.section_dons--sans-img .p--width {
+  width: 60%;
+  margin-left: 0 auto;
+  display: inline-block; }
 
 .h3--color-dark,
 .h4--color-dark {

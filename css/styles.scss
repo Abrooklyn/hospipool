@@ -131,6 +131,13 @@ h6,
     }
 }
 
+.margin-top{
+    margin-top:7rem;
+}
+.navbar--sans-marge-sup{
+    margin-top:-7rem;
+}
+
 .background_video{
     background: $grismoyen;
     width: 100%;
@@ -187,6 +194,23 @@ h6,
         display:inline-block;
     }
 }
+
+
+
+.section_dons--sans-img{
+    .section_dons--center{
+        text-align: center;
+    }
+    &:before{
+        content:" ";
+    }
+    .p--width{
+        width: 60%;
+        margin-left: 0 auto;
+        display:inline-block;
+    }
+}
+
 .h3--color-dark,
 .h4--color-dark{
     color:$grismoyen;
@@ -464,5 +488,5 @@ footer{
     }
     a{
         color:$rougemoyen;
-    }
+    } 
 }
